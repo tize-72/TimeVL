@@ -1,0 +1,575 @@
+[
+    {
+        "idx": 58,
+        "question_text": "You are a time series analysis expert. This time series is \"Fuel Consumption\" from Energy with length of 843: <ts><ts/>, please analyze the time series features and answer the following questions:\n1. What are the noise characteristics of this time series? Please choose from [\"noisy\", \"almost no noise\"]. Answer format: noisy, the overall noise standard deviation is around 1.5.\n2. What is the trend of this time series? Please choose from [\"steady\", \"decreasing\", \"increasing\"] and describe the value trend change. Answer format: steady, the starting point value is around 32.10, and the trend change value from left to right is around 0.12.\n3. What are the local characteristic fluctuations of this time series? The optional types of local characteristic fluctuations include: [\"continuous downward spike\", \"continuous upward spike\", \"decrease after downward spike\", \"decrease after upward spike\", \"downward convex\", \"downward spike\", \"increase after downward spike\", \"increase after upward spike\", \"rapid decline followed by slow rise\", \"rapid rise followed by slow decline\", \"shake\", \"slow decline followed by rapid rise\", \"slow rise followed by rapid decline\", \"sudden decrease\", \"sudden increase\", \"upward convex\", \"upward spike\", \"wide downward spike\", \"wide upward spike\"]. You need to analyze all the characteristic fluctuations that appear in this time series and answer each type, position, and amplitude in the format, and conclude the physical meaning of **each** fluctuation in one sentence. Different local characteristic fluctuations should be separated by semicolons. Answer format: shake, position around point 125, amplitude 135.03. A sudden surge in public interest, likely due to significant news, a major event, or a trending topic related to the platform that rapidly captured user attention; small sudden decrease, position around point 102, amplitude 31.05. A slight increase in interest, possibly driven by minor news, promotions, or social media discussions that briefly captured attention without indicating a significant trend.\nNow, based on the above questions, please strictly follow the output format requirements and provide the answers. Each line corresponds to an answer to a question, formatted as:1. Strictly formatted answer 1\n2. Strictly formatted answer 2\n3. Strictly formatted answer 3",
+        "gold_answer": "1. almost no noise, the overall noise standard deviation is around 0.01.\n2. keep steady, the starting point value is around -0.96, and the trend change value from left to right is around -14.49.\n3. No local characteristic fluctuations found.\n",
+        "series_num": 1,
+        "anchor_available": true,
+        "anchor_response": "1. almost no noise, the overall noise standard deviation is around 0.00.\n2. keep steady, the starting point value is around -1.01, and the trend change value from left to right is around -14.73.\n3. No local characteristic fluctuations found.\n",
+        "anchor_num_tokens": {
+            "total": 1678,
+            "input": 1615,
+            "output": 63
+        },
+        "anchor_meta": {
+            "anchor_value": 421,
+            "anchor_value_floor": 421,
+            "window_left": 401,
+            "window_right": 441,
+            "window_json": [
+                {
+                    "index": 401,
+                    "value": -6.57
+                },
+                {
+                    "index": 402,
+                    "value": -5.32
+                },
+                {
+                    "index": 403,
+                    "value": -3.7
+                },
+                {
+                    "index": 404,
+                    "value": -2.17
+                },
+                {
+                    "index": 405,
+                    "value": -1.18
+                },
+                {
+                    "index": 406,
+                    "value": -1.13
+                },
+                {
+                    "index": 407,
+                    "value": -2.21
+                },
+                {
+                    "index": 408,
+                    "value": -4.37
+                },
+                {
+                    "index": 409,
+                    "value": -7.3
+                },
+                {
+                    "index": 410,
+                    "value": -10.43
+                },
+                {
+                    "index": 411,
+                    "value": -13.18
+                },
+                {
+                    "index": 412,
+                    "value": -15.04
+                },
+                {
+                    "index": 413,
+                    "value": -15.7
+                },
+                {
+                    "index": 414,
+                    "value": -15.2
+                },
+                {
+                    "index": 415,
+                    "value": -13.78
+                },
+                {
+                    "index": 416,
+                    "value": -11.88
+                },
+                {
+                    "index": 417,
+                    "value": -10.02
+                },
+                {
+                    "index": 418,
+                    "value": -8.58
+                },
+                {
+                    "index": 419,
+                    "value": -7.79
+                },
+                {
+                    "index": 420,
+                    "value": -7.51
+                },
+                {
+                    "index": 421,
+                    "value": -7.53
+                },
+                {
+                    "index": 422,
+                    "value": -7.48
+                },
+                {
+                    "index": 423,
+                    "value": -7.03
+                },
+                {
+                    "index": 424,
+                    "value": -6.04
+                },
+                {
+                    "index": 425,
+                    "value": -4.58
+                },
+                {
+                    "index": 426,
+                    "value": -2.97
+                },
+                {
+                    "index": 427,
+                    "value": -1.64
+                },
+                {
+                    "index": 428,
+                    "value": -1.02
+                },
+                {
+                    "index": 429,
+                    "value": -1.46
+                },
+                {
+                    "index": 430,
+                    "value": -3.09
+                },
+                {
+                    "index": 431,
+                    "value": -5.65
+                },
+                {
+                    "index": 432,
+                    "value": -8.75
+                },
+                {
+                    "index": 433,
+                    "value": -11.78
+                },
+                {
+                    "index": 434,
+                    "value": -14.16
+                },
+                {
+                    "index": 435,
+                    "value": -15.49
+                },
+                {
+                    "index": 436,
+                    "value": -15.6
+                },
+                {
+                    "index": 437,
+                    "value": -14.62
+                },
+                {
+                    "index": 438,
+                    "value": -12.91
+                },
+                {
+                    "index": 439,
+                    "value": -11.0
+                },
+                {
+                    "index": 440,
+                    "value": -9.3
+                },
+                {
+                    "index": 441,
+                    "value": -8.15
+                }
+            ]
+        },
+        "plain_response": "1. almost no noise, the overall noise standard deviation is around 0.00.\n2. keep steady, the starting point value is around -15.56, and the trend change value from left to right is around 0.00.\n3. No local characteristic fluctuations found.\n",
+        "plain_num_tokens": {
+            "total": 861,
+            "input": 798,
+            "output": 63
+        }
+    },
+    {
+        "idx": 41,
+        "question_text": "You are a time series analysis expert. This time series is \"Air Temperature Trends\" from Weather Forecasting with length of 256: <ts><ts/>, please analyze the time series features and answer the following questions:\n1. What are the noise characteristics of this time series? Please choose from [\"noisy\", \"almost no noise\"]. Answer format: noisy, the overall noise standard deviation is around 1.5.\n2. What are the local characteristic fluctuations of this time series? The optional types of local characteristic fluctuations include: [\"continuous downward spike\", \"continuous upward spike\", \"decrease after downward spike\", \"decrease after upward spike\", \"downward convex\", \"downward spike\", \"increase after downward spike\", \"increase after upward spike\", \"rapid decline followed by slow rise\", \"rapid rise followed by slow decline\", \"shake\", \"slow decline followed by rapid rise\", \"slow rise followed by rapid decline\", \"sudden decrease\", \"sudden increase\", \"upward convex\", \"upward spike\", \"wide downward spike\", \"wide upward spike\"]. You need to analyze all the characteristic fluctuations that appear in this time series and answer each type, position, and amplitude in the format, and conclude the physical meaning of **each** fluctuation in one sentence. Different local characteristic fluctuations should be separated by semicolons. Answer format: shake, position around point 125, amplitude 135.03. A sudden surge in public interest, likely due to significant news, a major event, or a trending topic related to the platform that rapidly captured user attention; small sudden decrease, position around point 102, amplitude 31.05. A slight increase in interest, possibly driven by minor news, promotions, or social media discussions that briefly captured attention without indicating a significant trend.\n3. What are the local characteristic fluctuations of this time series? The optional types of local characteristic fluctuations include: [\"continuous downward spike\", \"continuous upward spike\", \"decrease after downward spike\", \"decrease after upward spike\", \"downward convex\", \"downward spike\", \"increase after downward spike\", \"increase after upward spike\", \"rapid decline followed by slow rise\", \"rapid rise followed by slow decline\", \"shake\", \"slow decline followed by rapid rise\", \"slow rise followed by rapid decline\", \"sudden decrease\", \"sudden increase\", \"upward convex\", \"upward spike\", \"wide downward spike\", \"wide upward spike\"]. You need to analyze all the characteristic fluctuations that appear in this time series and answer each type, position, and amplitude in the format. Different local characteristic fluctuations should be separated by semicolons. Answer format: shake, position around point 125, amplitude 135.03; small sudden decrease, position around point 102, amplitude 31.05.\n4. What is the trend of this time series? Please choose from [\"steady\", \"decreasing\", \"increasing\"] and describe the value trend change. Answer format: steady, the starting point value is around 32.10, and the trend change value from left to right is around 0.12.\nNow, based on the above questions, please strictly follow the output format requirements and provide the answers. Each line corresponds to an answer to a question, formatted as:1. Strictly formatted answer 1\n2. Strictly formatted answer 2\n3. Strictly formatted answer 3\n4. Strictly formatted answer 4",
+        "gold_answer": "1. almost no noise, the overall noise standard deviation is around 0.01.\n2. continuous upward spike, position around point 136, amplitude 81.84. an continuous upward spike in Air Temperature Trends suggests a rapid increase in air temperature over time, possibly due to local weather conditions or climate change\n3. continuous upward spike, position around point 136, amplitude 81.84\n4. keep steady, the starting point value is around -73.36, and the trend change value from left to right is around -7.40.\n",
+        "series_num": 1,
+        "anchor_available": true,
+        "anchor_response": "1. almost no noise, the overall noise standard deviation is around 0.00.\n2. continuous upward spike, position around point 139, amplitude 80.79. An continuous upward spike in Air Temperature Trends indicates a sudden and sustained increase in air temperature over time, possibly due to heatwaves, urban heat island effect, or changes in atmospheric conditions\n3. continuous upward spike, position around point 139, amplitude 80.79\n4. keep steady, the starting point value is around -72.43, and the trend change value from left to right is around -7.05.\n",
+        "anchor_num_tokens": {
+            "total": 2020,
+            "input": 1883,
+            "output": 137
+        },
+        "anchor_meta": {
+            "anchor_value": 141,
+            "anchor_value_floor": 141,
+            "window_left": 121,
+            "window_right": 161,
+            "window_json": [
+                {
+                    "index": 121,
+                    "value": -104.13
+                },
+                {
+                    "index": 122,
+                    "value": -103.57
+                },
+                {
+                    "index": 123,
+                    "value": -101.66
+                },
+                {
+                    "index": 124,
+                    "value": -99.69
+                },
+                {
+                    "index": 125,
+                    "value": -98.95
+                },
+                {
+                    "index": 126,
+                    "value": -100.14
+                },
+                {
+                    "index": 127,
+                    "value": -103.02
+                },
+                {
+                    "index": 128,
+                    "value": -106.59
+                },
+                {
+                    "index": 129,
+                    "value": -109.32
+                },
+                {
+                    "index": 130,
+                    "value": -109.86
+                },
+                {
+                    "index": 131,
+                    "value": -107.29
+                },
+                {
+                    "index": 132,
+                    "value": -101.8
+                },
+                {
+                    "index": 133,
+                    "value": -94.26
+                },
+                {
+                    "index": 134,
+                    "value": -86.19
+                },
+                {
+                    "index": 135,
+                    "value": -79.12
+                },
+                {
+                    "index": 136,
+                    "value": -74.14
+                },
+                {
+                    "index": 137,
+                    "value": -71.65
+                },
+                {
+                    "index": 138,
+                    "value": -71.39
+                },
+                {
+                    "index": 139,
+                    "value": -72.67
+                },
+                {
+                    "index": 140,
+                    "value": -74.71
+                },
+                {
+                    "index": 141,
+                    "value": -76.86
+                },
+                {
+                    "index": 142,
+                    "value": -11.01
+                },
+                {
+                    "index": 143,
+                    "value": -80.58
+                },
+                {
+                    "index": 144,
+                    "value": -19.02
+                },
+                {
+                    "index": 145,
+                    "value": -35.88
+                },
+                {
+                    "index": 146,
+                    "value": -83.54
+                },
+                {
+                    "index": 147,
+                    "value": -82.83
+                },
+                {
+                    "index": 148,
+                    "value": -80.82
+                },
+                {
+                    "index": 149,
+                    "value": -77.56
+                },
+                {
+                    "index": 150,
+                    "value": -73.66
+                },
+                {
+                    "index": 151,
+                    "value": -69.95
+                },
+                {
+                    "index": 152,
+                    "value": 29.51
+                },
+                {
+                    "index": 153,
+                    "value": -66.54
+                },
+                {
+                    "index": 154,
+                    "value": -67.53
+                },
+                {
+                    "index": 155,
+                    "value": -69.91
+                },
+                {
+                    "index": 156,
+                    "value": -72.77
+                },
+                {
+                    "index": 157,
+                    "value": 20.02
+                },
+                {
+                    "index": 158,
+                    "value": -76.66
+                },
+                {
+                    "index": 159,
+                    "value": -77.19
+                },
+                {
+                    "index": 160,
+                    "value": -77.45
+                },
+                {
+                    "index": 161,
+                    "value": -78.39
+                }
+            ]
+        },
+        "plain_response": "1. almost no noise, the overall noise standard deviation is around 0.02.\n2. continuous upward spike, position around point 139, amplitude 93.83. An continuous upward spike in Air Temperature Trends indicates a sudden and sustained increase in air temperature over time, possibly due to heatwaves, urban heat island effect, or changes in atmospheric conditions\n3. continuous upward spike, position around point 139, amplitude 93.83\n4. keep steady, the starting point value is around -72.68, and the trend change value from left to right is around -6.74.\n",
+        "plain_num_tokens": {
+            "total": 1160,
+            "input": 1024,
+            "output": 136
+        }
+    },
+    {
+        "idx": 39,
+        "question_text": "You are a time series analysis expert. This time series is \"Volatility Index (VIX)\" from Finance with length of 256: <ts><ts/>, please analyze the time series features and answer the following questions:\n1. What is the periodicity of this time series? Please choose from [\"no periodic fluctuation\", \"periodic fluctuation\"]. If there is periodic fluctuation, describe the fluctuation frequency and amplitude. Answer format: periodic fluctuation, each period is around 20.58 points, and the amplitude of the periodic fluctuation is around 31.51.\n2. What are the local characteristic fluctuations of this time series? The optional types of local characteristic fluctuations include: [\"continuous downward spike\", \"continuous upward spike\", \"decrease after downward spike\", \"decrease after upward spike\", \"downward convex\", \"downward spike\", \"increase after downward spike\", \"increase after upward spike\", \"rapid decline followed by slow rise\", \"rapid rise followed by slow decline\", \"shake\", \"slow decline followed by rapid rise\", \"slow rise followed by rapid decline\", \"sudden decrease\", \"sudden increase\", \"upward convex\", \"upward spike\", \"wide downward spike\", \"wide upward spike\"]. You need to analyze all the characteristic fluctuations that appear in this time series and answer each type, position, and amplitude in the format, and conclude the physical meaning of **each** fluctuation in one sentence. Different local characteristic fluctuations should be separated by semicolons. Answer format: shake, position around point 125, amplitude 135.03. A sudden surge in public interest, likely due to significant news, a major event, or a trending topic related to the platform that rapidly captured user attention; small sudden decrease, position around point 102, amplitude 31.05. A slight increase in interest, possibly driven by minor news, promotions, or social media discussions that briefly captured attention without indicating a significant trend.\n3. What are the noise characteristics of this time series? Please choose from [\"noisy\", \"almost no noise\"]. Answer format: noisy, the overall noise standard deviation is around 1.5.\nNow, based on the above questions, please strictly follow the output format requirements and provide the answers. Each line corresponds to an answer to a question, formatted as:1. Strictly formatted answer 1\n2. Strictly formatted answer 2\n3. Strictly formatted answer 3",
+        "gold_answer": "1. no periodic fluctuation\n2. continuous upward spike, position around point 55, amplitude 191.79. A continuous upward spike in the Volatility Index (VIX) indicates an increase in market anxiety or anticipated price fluctuations in the near future; decrease after downward spike, position around point 103, amplitude 392.28. A decrease after downward spike in the Volatility Index (VIX) indicates a temporary increase in market stability following a sharp decline in investor anxiety\n3. almost no noise, the overall noise standard deviation is around 0.04.\n",
+        "series_num": 1,
+        "anchor_available": true,
+        "anchor_response": "1. no periodic fluctuation\n2. continuous upward spike, position around point 52, amplitude 155.82. The continuous upward spike in the Volatility Index (VIX) indicates increased market anxiety or anticipation of increased price fluctuations in the near future; decrease after downward spike, position around point 103, amplitude 388.99. A decrease after downward spike in the Volatility Index (VIX) indicates a period of market calm following a sudden increase in anxiety or uncertainty, suggesting that investors may be reassessing and adjusting their positions in response to new information or events; upward spike, position around point 76, amplitude 192.38. An upward spike in the Volatility Index (VIX) indicates increased market anxiety or anticipation of increased price fluctuations in the near future\n3. almost no noise, the overall noise standard deviation is around 0.03.\n",
+        "anchor_num_tokens": {
+            "total": 1811,
+            "input": 1617,
+            "output": 194
+        },
+        "anchor_meta": {
+            "anchor_value": 60,
+            "anchor_value_floor": 60,
+            "window_left": 40,
+            "window_right": 80,
+            "window_json": [
+                {
+                    "index": 40,
+                    "value": -39.67
+                },
+                {
+                    "index": 41,
+                    "value": -39.27
+                },
+                {
+                    "index": 42,
+                    "value": -38.85
+                },
+                {
+                    "index": 43,
+                    "value": -38.49
+                },
+                {
+                    "index": 44,
+                    "value": -38.05
+                },
+                {
+                    "index": 45,
+                    "value": -37.6
+                },
+                {
+                    "index": 46,
+                    "value": -37.25
+                },
+                {
+                    "index": 47,
+                    "value": -36.83
+                },
+                {
+                    "index": 48,
+                    "value": -36.39
+                },
+                {
+                    "index": 49,
+                    "value": -36.04
+                },
+                {
+                    "index": 50,
+                    "value": -35.59
+                },
+                {
+                    "index": 51,
+                    "value": -35.22
+                },
+                {
+                    "index": 52,
+                    "value": -34.8
+                },
+                {
+                    "index": 53,
+                    "value": -34.31
+                },
+                {
+                    "index": 54,
+                    "value": -33.91
+                },
+                {
+                    "index": 55,
+                    "value": -33.5
+                },
+                {
+                    "index": 56,
+                    "value": -33.13
+                },
+                {
+                    "index": 57,
+                    "value": -32.81
+                },
+                {
+                    "index": 58,
+                    "value": 129.3
+                },
+                {
+                    "index": 59,
+                    "value": -31.98
+                },
+                {
+                    "index": 60,
+                    "value": -31.56
+                },
+                {
+                    "index": 61,
+                    "value": -31.17
+                },
+                {
+                    "index": 62,
+                    "value": -30.85
+                },
+                {
+                    "index": 63,
+                    "value": 106.48
+                },
+                {
+                    "index": 64,
+                    "value": 106.84
+                },
+                {
+                    "index": 65,
+                    "value": -29.61
+                },
+                {
+                    "index": 66,
+                    "value": -29.24
+                },
+                {
+                    "index": 67,
+                    "value": -28.84
+                },
+                {
+                    "index": 68,
+                    "value": -28.45
+                },
+                {
+                    "index": 69,
+                    "value": -28.05
+                },
+                {
+                    "index": 70,
+                    "value": -27.64
+                },
+                {
+                    "index": 71,
+                    "value": -27.28
+                },
+                {
+                    "index": 72,
+                    "value": 240.47
+                },
+                {
+                    "index": 73,
+                    "value": -26.5
+                },
+                {
+                    "index": 74,
+                    "value": -26.09
+                },
+                {
+                    "index": 75,
+                    "value": -25.8
+                },
+                {
+                    "index": 76,
+                    "value": -25.31
+                },
+                {
+                    "index": 77,
+                    "value": 176.23
+                },
+                {
+                    "index": 78,
+                    "value": -24.6
+                },
+                {
+                    "index": 79,
+                    "value": -24.26
+                },
+                {
+                    "index": 80,
+                    "value": -23.85
+                }
+            ]
+        },
+        "plain_response": "1. no periodic fluctuation\n2. continuous upward spike, position around point 54, amplitude 161.02. The continuous upward spike in the Volatility Index (VIX) indicates increased market anxiety or anticipation of increased price fluctuations in the near future; decrease after downward spike, position around point 104, amplitude 386.22. A decrease after downward spike in the Volatility Index (VIX) indicates a temporary market downturn followed by a return to calmer conditions, suggesting that investors may have initially reacted fearfully but then adjusted their expectations or found opportunities to buy, leading to a drop in the index\n3. almost no noise, the overall noise standard deviation is around 0.03.\n",
+        "plain_num_tokens": {
+            "total": 968,
+            "input": 813,
+            "output": 155
+        }
+    }
+]
